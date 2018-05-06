@@ -20,4 +20,4 @@ WORKDIR /falcon
 ENV PYTHONPATH /
 #RUN pip3 install cython
 #RUN pip3 install --no-binary :all: falcon
-RUN pip3 install -r /falcon/requirements.txt
+RUN python3.6 -m pip install -r /falcon/requirements.txt
